@@ -41,7 +41,7 @@ export interface Wallet {
     signer: Signer;
 }
 export interface TransactionManager {
-    sendTransactionAsync(unsignedTx: UnsignedPayload): Promise<any>;
+    signTransactionAsync(unsignedTx: UnsignedPayload): Promise<any>;
     signMessageAsync(unsignedMsg: UnsignedPayload): Promise<any>;
 }
 export declare enum PayloadType {
