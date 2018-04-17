@@ -1,13 +1,13 @@
 import * as lightwallet from 'eth-lightwallet';
 import { keystore, signing } from 'eth-lightwallet';
-import { CoreWallet } from './Wallets/CoreWallet';
+import { CoreWallet } from './wallets/CoreWallet';
 
 export class Store {
 
  /**
   * Check if local storage is supported
-  * 
-  * 
+  *
+  *
   */
   public isLocalStorageSupported() {
     const lsSupportTest = 'lsSupportTest';
@@ -23,7 +23,7 @@ export class Store {
 
  /**
   * Save the encrypted wallet in local storage
-  * 
+  *
   * @param wallet The wallet to save
   * @param keyName The key identifier
   */
@@ -35,7 +35,7 @@ export class Store {
 
  /**
   * Load the encrypted wallet from local storage
-  * 
+  *
   * @param keyName The key identifier
   */
   public loadCoreWallet(keyName: string = 'radar-core-wallet') {

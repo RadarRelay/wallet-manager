@@ -1,4 +1,4 @@
-import { CoreWallet } from './Wallets/CoreWallet';
+import { CoreWallet } from './wallets/CoreWallet';
 export declare class Store {
     /**
      * Check if local storage is supported
